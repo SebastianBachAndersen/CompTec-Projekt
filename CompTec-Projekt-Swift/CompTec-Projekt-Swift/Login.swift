@@ -1,9 +1,9 @@
 //
 //  Login.swift
-//  CompTec-Projekt Run Escape
+//  CompTec-Projekt-Swift
 //
 //  Created by elev on 12/06/2018.
-//  Copyright © 2018 elev. All rights reserved.
+//  Copyright © 2018 Sebastian Bach Andersen. All rights reserved.
 //
 
 import Foundation
