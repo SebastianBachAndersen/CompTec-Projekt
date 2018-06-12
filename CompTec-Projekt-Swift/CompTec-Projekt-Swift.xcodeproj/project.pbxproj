@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FF31452F20CFAE0000572FB0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31452E20CFAE0000572FB0 /* main.swift */; };
+<<<<<<< Updated upstream
 		FF3895CC20CFE52D00DEFFD2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3895CB20CFE52D00DEFFD2 /* Login.swift */; };
+=======
+		FF31453620CFE3CE00572FB0 /* Combat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF31453520CFE3CE00572FB0 /* Combat.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +30,11 @@
 /* Begin PBXFileReference section */
 		FF31452B20CFAE0000572FB0 /* CompTec-Projekt-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CompTec-Projekt-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF31452E20CFAE0000572FB0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		FF3895CB20CFE52D00DEFFD2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+=======
+		FF31453520CFE3CE00572FB0 /* Combat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combat.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				FF31452E20CFAE0000572FB0 /* main.swift */,
+<<<<<<< Updated upstream
 				FF3895CB20CFE52D00DEFFD2 /* Login.swift */,
+=======
+				FF31453520CFE3CE00572FB0 /* Combat.swift */,
+>>>>>>> Stashed changes
 			);
 			path = "CompTec-Projekt-Swift";
 			sourceTree = "<group>";
@@ -124,7 +136,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF31452F20CFAE0000572FB0 /* main.swift in Sources */,
+<<<<<<< Updated upstream
 				FF3895CC20CFE52D00DEFFD2 /* Login.swift in Sources */,
+=======
+				FF31453620CFE3CE00572FB0 /* Combat.swift in Sources */,
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

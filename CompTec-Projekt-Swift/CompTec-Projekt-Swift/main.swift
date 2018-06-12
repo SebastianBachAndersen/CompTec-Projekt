@@ -1,4 +1,4 @@
 import Foundation
-
-print("Hello, World!")
+var test = 0
+print(test)
 
