@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class Login {
     
     func LoginToAccount()
@@ -15,10 +16,13 @@ class Login {
         
         var username = readLine()
         var password = readLine()
-        
-        if username == Users.username && password == Users.password
+        //let i = Users
+        for i in Users
         {
-            
+            if username == i.username && password == i.password
+            {
+                
+            }
         }
     }
 }
@@ -35,16 +39,20 @@ class Profile {
         self.password = password
     }
     
-    func newUser() ->  {
+    func newUser() {
         
-        var username = readLine()
-        var password = readLine()
+        var writeUsername = readLine()
+        var writePassword = readLine()
         
         
-        
+        Users.append(Profile(username : String = writeUsername, password : String = writePassword))
     }
 }
 
+var ulrik = Profile(username : "Ulrik", password: "ulrik")
 var benjamin = Profile(username: "Benjamin", password: "Password1")
 
-var Users : Array<Profile> = [benjamin]
+var Users : Array =  [benjamin]
+
+
+
