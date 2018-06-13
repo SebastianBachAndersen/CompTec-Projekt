@@ -1,6 +1,6 @@
 import Foundation
 
-print("Hello, World!")
+print("")
 
 let test = combat
 
