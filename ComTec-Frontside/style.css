@@ -1,0 +1,21 @@
+h1.headline {
+    border-style: solid;
+    text-align: center;
+    border-color: black;
+}
+body {
+    background-color: grey;
+}
+div.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: brown;
+    grid-gap: 10px;
+    padding: 10px;
+}
+div.gridContainer > div {
+    background-color: lightgrey;
+    padding: 10px;
+}
+div.scoreboard {
+}
