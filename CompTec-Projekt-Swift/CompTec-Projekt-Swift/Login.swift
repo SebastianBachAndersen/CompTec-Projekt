@@ -14,8 +14,8 @@ class Login {
     func LoginToAccount()
     {
         
-        var username = readLine()
-        var password = readLine()
+        let username = readLine()
+        let password = readLine()
         //let i = Users
         for i in Users
         {
@@ -29,28 +29,25 @@ class Login {
 
 
 class Profile {
+    
     var username : String
     var password : String
     
     
-    init(username: String, password: String)
-    {
-        self.username = username
-        self.password = password
-    }
-    
-    func newUser() {
+    init() {
+        let writeUsername = readLine() ?? ""
+        let writePassword = readLine() ?? ""
         
-        var writeUsername = readLine()
-        var writePassword = readLine()
+        self.username = writeUsername
+        self.password = writePassword
         
-        
-        Users.append(Profile(username : String = writeUsername, password : String = writePassword))
+        Users.append(self)
     }
 }
 
-var ulrik = Profile(username : "Ulrik", password: "ulrik")
-var benjamin = Profile(username: "Benjamin", password: "Password1")
+
+var ulrik = Profile()
+var benjamin = Profile()
 
 var Users : Array =  [benjamin]
 
