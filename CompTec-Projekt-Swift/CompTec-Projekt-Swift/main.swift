@@ -12,19 +12,19 @@ var loginPlaceholder = Login()
     var login = Login()
 // password og username cheak
 while password == ""{
-    print("username")
+    print("username")øldf
     username = readLine()!
     print("Write your password")
     password = readLine()!
     login.login(username: username, password: password)
     sleep(1)
     var playername = login.userpass
+    
     if playername != ""{
         break
     }
     password = ""
 }
-
 
 
 combatPlaceholder.currentPlayer.name = username
