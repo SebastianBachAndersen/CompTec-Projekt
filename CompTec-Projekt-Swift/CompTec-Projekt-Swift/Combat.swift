@@ -16,7 +16,7 @@ class Combat {
         self.xpWhenKilled = xpWhenKilled
     }
     
-    public var currentPlayer : Player = Player(name : String = playername, combatLevelxp: Int)
+    public var currentPlayer = Player()
     public var currentEnemy : Character = Cow()
 
     
