@@ -6,26 +6,56 @@ class combat {
     
     init(xpWhenKilled: Int) {
         self.xpWhenKilled = xpWhenKilled
+        
+        var currentPlayer = Player(type: "Player", currentHealth: 100, combatLevel: 2, attackPower: <#T##Int#>)
+        
+        var currentEnemy = Cow(type: "Cow", currentHealth: 40, combatLevel: 1, attackPower: <#T##Int#>)
 
     }
 /*
  --------------------------------------------------------------Combat Functions Below-------------------------------------------------------------------------------
  */
 
-    var currentPlayer = Player(type: "Cow", currentHealth: 100, combatLevel: 2, attackPower: <#T##Int#>)
     
     func startFight() {
+        print("It is your turn! What are you going to do?")
+        print("Write 0 for help")
         
-        var currentEnemy = Cow(type: "Cow", currentHealth: 40, combatLevel: 1, attackPower: <#T##Int#>)
+        let fight = readLine()
+        
+        switch fight {
+            
+        case "0"?:
+            print("Write 1 to Attack")
+            print("Write 2 to Run Escape")
+            startFight()
+            
+        case "1"?:
+            attack()
+            enemyTurn()
+            
+        case "2"?:
+            run()
+            
+        default:
+            print("You cant just stand there and do nothing!")
+            startFight()
+        }
+        
+    }
     
     
     func attack() {
         
-        print("You attacked the \(currentEnemy)")
+        currentEnemy.currentHealth = currentEnemy.currentHealth - currentPlayer.attackPower
+        print("You attacked the \(currentEnemy.type), You dealt \(currentPlayer.attackPower) Damage!")
+        print("The \(currentEnemy.type) now has \(currentEnemy.currentHealth) HP left!")
+        
         
         if currentEnemy.currentHealth <= 0
         {
             print("You killed the \(currentEnemy)")
+            win()
         }
         else if currentPlayer.currentHealth <= 0
         {
@@ -41,42 +71,26 @@ class combat {
     
     func run() {
         print("You sucessfully ran away from the \(currentEnemy)")
-        
         lose()
     }
+    
+    
     func enemyTurn() {
-        <#function body#>
+        currentPlayer.currentHealth = currentPlayer.currentHealth - currentEnemy.attackPower
+        print("The \(currentEnemy.type) dealt \(currentEnemy.attackPower) to you!")
     }
+    
     
     func win() {
         print("You won the battle!")
     }
+    
+    
     func lose() {
         print("You lost the battle!")
+        
     }
     
+    
     }
-    print("It is your turn! What are you going to do?")
-    print("Write 0 for help")
-    let fight = readLine()
-    
-    switch fight {
-    
-    case "0"?:
-    print("Write 1 to Attack")
-    print("Write 2 to Run Escape")
-    startFight()
-    
-    case "1"?:
-    attack()
-    enemyTurn()
-    
-    case "2"?:
-    run()
-    
-    default:
-    print("You cant just stand there and do nothing!")
-    startFight()
-    }
-    
-}
+

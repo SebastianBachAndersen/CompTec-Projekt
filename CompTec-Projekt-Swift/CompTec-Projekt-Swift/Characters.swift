@@ -16,7 +16,7 @@ class Character {
     
     init(type : String, currentHealth : Int, combatLevel : Int, attackPower : Int) {
         self.type = type
-        self.currentHealth = currentHealth
+        self.currentHealth = 100 * combatLevel / 2 + 50
         self.combatLevel = combatLevel
         self.attackPower = 10 * combatLevel / 2 + 5
         

@@ -50,7 +50,7 @@
 //var ulrik = Profile()
 //var benjamin = Profile()
 //
-//var Users : Array =  [benjamin]
+// var Users : Array = [benjamin]
 
 
 
