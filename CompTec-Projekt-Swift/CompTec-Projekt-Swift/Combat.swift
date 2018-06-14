@@ -108,7 +108,7 @@ class Combat {
         print("The \(currentEnemy.type) dealt \(currentEnemy.attackPower) to you!")
         Thread.sleep(forTimeInterval: 1)
         
-        if currentPlayer.currentHealth >= 0 {
+        if currentPlayer.currentHealth <= 0 {
             lose()
         }
     }

@@ -34,7 +34,7 @@ combatPlaceholder.currentPlayer.name = username
 
 func gameStart() {
 
-print("Welcome to the world of Run Escape \(combatPlaceholder.currentPlayer.name)!")
+print("Welcome to the world of Run Escape, \(combatPlaceholder.currentPlayer.name)!")
 print("There's so many places to visit here!")
 
 farmPlaceholder.pickFarm()
