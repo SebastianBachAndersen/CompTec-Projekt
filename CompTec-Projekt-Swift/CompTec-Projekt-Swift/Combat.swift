@@ -1,6 +1,14 @@
+//
+//  Combat.swift
+//  CompTec-Projekt-Swift
+//
+//  Created by elev on 14/06/2018.
+//  Copyright © 2018 Sebastian Bach Andersen. All rights reserved.
+//
+
 import Foundation
 
-class combat {
+class Combat {
     
     var xpWhenKilled = 0
     
@@ -8,9 +16,9 @@ class combat {
         self.xpWhenKilled = xpWhenKilled
     }
     
-    var currentPlayer = Player(type: "Player", currentHealth: 100, combatLevel: 2, attackPower: <#T##Int#>)
+    public var currentPlayer = Player()
     
-    var currentEnemy = Cow(type: "Cow", currentHealth: 40, combatLevel: 1, attackPower: <#T##Int#>)
+    public var currentEnemy : Character = Cow()
 
     
 /*
@@ -84,6 +92,7 @@ class combat {
     
     func win() {
         print("You won the battle!")
+        print("")
     }
     
     
@@ -94,4 +103,3 @@ class combat {
     
     
     }
-

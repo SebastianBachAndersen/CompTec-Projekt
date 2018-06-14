@@ -1,6 +1,8 @@
 import Foundation
 
 
+var farm = Farm()
+
 //Farm.pickFarm()
 var login = Login()
 print("username")
@@ -12,5 +14,9 @@ sleep(1)
 var playername = login.userpass
 print(playername)
 var dude = readLine()
+
+
+
+farm.pickFarm()
 
 
