@@ -10,6 +10,7 @@ import Foundation
 
 var combat = Combat(xpWhenKilled: 10)
 
+// 
 class Farm  {
     
     func pickFarm() {
