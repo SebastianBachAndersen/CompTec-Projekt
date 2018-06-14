@@ -6,15 +6,26 @@ var combatPlaceholder = Combat()
 var loginPlaceholder = Login()
 
 //Farm.pickFarm()
-var login = Login()
-print("username")
-var username = readLine()!
-print("Write your password")
-var password = readLine()!
-login.login(username: username, password: password)
-sleep(1)
-var playername = login.userpass
-print(playername)
+    var username = ""
+    var password = ""
+
+    //login class
+    var login = Login()
+// password og username cheak
+while password == ""{
+    print("username")
+    username = readLine()!
+    print("Write your password")
+    password = readLine()!
+    login.login(username: username, password: password)
+    sleep(1)
+    var playername = login.userpass
+    if playername != ""{
+        break
+    }
+    password = ""
+}
+
 var dude = readLine()
 
 combatPlaceholder.currentPlayer.name = username
