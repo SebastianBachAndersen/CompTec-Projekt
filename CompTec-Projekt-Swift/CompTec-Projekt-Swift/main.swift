@@ -4,24 +4,37 @@ var farmPlaceholder = Farm()
 var combatPlaceholder = Combat()
 var loginPlaceholder = Login()
 
-print("Type your username")
-if let username = readLine(){
-    print("Type your password")
-    if let password = readLine(){
-        loginPlaceholder.login(username: username, password: password)
-        print("Press 'Enter' to start game!")
-        sleep(1)
+//Farm.pickFarm()
+    var username = ""
+    var password = ""
 
-        combatPlaceholder.currentPlayer.name = username
+    //login class
+    var login = Login()
+// password og username cheak
+while password == ""{
+    print("username")
+    username = readLine()!
+    print("Write your password")
+    password = readLine()!
+    login.login(username: username, password: password)
+    sleep(1)
+    let playername = login.userpass
+    
+    if playername != ""{
+        break
     }
+    password = ""
 }
-var dude = readLine()
+
+
+combatPlaceholder.currentPlayer.name = username
+
 
 
 
 func gameStart() {
 
-print("Welcome to the world of Run Escape \(combatPlaceholder.currentPlayer.name)!")
+print("Welcome to the world of Run Escape, \(combatPlaceholder.currentPlayer.name)!")
 print("There's so many places to visit here!")
 
 farmPlaceholder.pickFarm()

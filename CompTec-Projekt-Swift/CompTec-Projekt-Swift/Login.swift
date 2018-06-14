@@ -85,12 +85,13 @@ class Login {
             
             
             for i in locArray{
-                
+                // cheking if user is in array
                 if username == i.username{
-                    
+                    // cheking if users password is true
                     if password == i.password{
                      
                         logedin = true
+                        // userpass == seassion id or character
                         userpass = i.username
                         break
                     }else{
@@ -103,11 +104,11 @@ class Login {
                 }
             }
             if logedin == true{
-                print("u loged in")
+                print("congratz you are now logged in")
                 return userpass
                 
             }else{
-                print("u loged out")
+                print("password or username worng try agian")
                 return userpass
             }
             
@@ -115,17 +116,10 @@ class Login {
         }
         return ""
     }
-        
 
-    
-    
     
     func signup(username: String, password: String){
-
-        
-                
-
-        
+  
 
     }
 }
