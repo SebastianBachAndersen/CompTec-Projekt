@@ -12,9 +12,9 @@ var farm = Farm()
 
 class Combat {
     
-    var xpWhenKilled = 10
+    var xpWhenKilled = 20
     
-    init(xpWhenKilled: Int = 10) {
+    init(xpWhenKilled: Int = 20) {
         self.xpWhenKilled = xpWhenKilled
     }
     
