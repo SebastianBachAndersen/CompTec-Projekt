@@ -120,6 +120,7 @@ class Combat {
         if currentPlayer.combatLevelxp >= 100 {
             currentPlayer.combatLevel = currentPlayer.combatLevel + 1
             print("You leveled up! Your combat level is now \(currentPlayer.combatLevel)")
+            currentPlayer.combatLevelxp = 0
         }
         farmPlaceholder.pickFarm()
     }
