@@ -130,6 +130,7 @@ class Combat {
     func lose() {
         
         print("You lost the battle!")
+        currentPlayer.currentHealth = 100
         
         if currentPlayer.currentHealth <= 0 {
             print("You died! Restarting game!")
