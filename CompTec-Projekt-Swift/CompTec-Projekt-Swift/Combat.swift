@@ -6,12 +6,13 @@ class combat {
     
     init(xpWhenKilled: Int) {
         self.xpWhenKilled = xpWhenKilled
-        
-        var currentPlayer = Player(type: "Player", currentHealth: 100, combatLevel: 2, attackPower: <#T##Int#>)
-        
-        var currentEnemy = Cow(type: "Cow", currentHealth: 40, combatLevel: 1, attackPower: <#T##Int#>)
-
     }
+    
+    var currentPlayer = Player(type: "Player", currentHealth: 100, combatLevel: 2, attackPower: <#T##Int#>)
+    
+    var currentEnemy = Cow(type: "Cow", currentHealth: 40, combatLevel: 1, attackPower: <#T##Int#>)
+
+    
 /*
  --------------------------------------------------------------Combat Functions Below-------------------------------------------------------------------------------
  */

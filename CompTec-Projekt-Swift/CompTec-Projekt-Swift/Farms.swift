@@ -23,6 +23,7 @@ class Farm  {
         case "1"?:
             print("You are now at the Cow Farm")
             print("New Quest! 'Kill 1 Cow!'")
+            
         case "2"?:
             print("You are inside at the Goblin Den")
             print("New Quest! 'Kill 1 Goblin!'")
