@@ -84,12 +84,12 @@ class Login {
             
         //URL to our web service
         
-        let URL_SAVE_TEAM = "localhost/MyWebService/api/createteam.php"
+        var URL_SAVE_TEAM = "localhost/MyWebService/api/createteam.php"
             
             
         //TextFields declarations
-        let username: String = username
-        let password: String = password
+        var username: String = username
+        var password: String = password
         
             
         

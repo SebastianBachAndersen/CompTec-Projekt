@@ -1,16 +1,18 @@
 import Foundation
 
 
-var farm = Farm()
+var farmPlaceholder = Farm()
+var combatPlaceholder = Combat()
+var loginPlaceholder = Login()
 
-var login = Login()
-
-print("username")
+print("Write your username")
 var username = readLine()!
-print("password")
+print("Write your password")
 var password = readLine()!
-login.login(username: username, password: password)
+loginPlaceholder.login(username: username, password: password)
 
+combatPlaceholder.currentPlayer.name = username
 
+print("")
 
-farm.pickFarm()
+farmPlaceholder.pickFarm()

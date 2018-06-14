@@ -25,8 +25,11 @@ class Character {
 }
 
 class Player : Character {
-    let name : String? = readLine()
-    init() {
+    var name : String?
+    var combatLevelxp : Int = 0
+    init(name : String?, combatLevelxp : Int) {
+        self.name = name
+        self.combatLevelxp = combatLevelxp
         super.init(type: "Player", currentHealth: 100, combatLevel: 1)
     }
 }

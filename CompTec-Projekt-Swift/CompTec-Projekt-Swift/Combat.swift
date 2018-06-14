@@ -10,14 +10,13 @@ import Foundation
 
 class Combat {
     
-    var xpWhenKilled = 0
+    var xpWhenKilled = 10
     
-    init(xpWhenKilled: Int) {
+    init(xpWhenKilled: Int = 10) {
         self.xpWhenKilled = xpWhenKilled
     }
     
-    public var currentPlayer = Player()
-    
+    public var currentPlayer : Player = Player(name = username, combatLevelxp: Int)
     public var currentEnemy : Character = Cow()
 
     
