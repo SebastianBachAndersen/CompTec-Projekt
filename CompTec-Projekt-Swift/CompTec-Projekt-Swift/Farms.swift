@@ -10,7 +10,7 @@ import Foundation
 
 var combat = Combat(xpWhenKilled: 10)
 
-// The Farm Class. It's literally only here to cont
+// The Farm Class. Contains the "main" function of the game.
 class Farm  {
     
     func pickFarm() {
@@ -22,6 +22,7 @@ class Farm  {
         
         let farmPick = readLine()
         
+        // Switch to let the player decide what enemy to attempt to kill.
         switch farmPick {
             
         case "1"?:

@@ -8,6 +8,7 @@
 
 import Foundation
 
+// The Base/Superclass, has all the basic variables, that all the below classes need.
 class Character {
     var type : String
     var currentHealth : Int
@@ -24,6 +25,8 @@ class Character {
     
 }
 
+// The Player class, unique from the Enemy classes, has a name, and combatLevelxp, making it possible to level up your combat level, to eventually take on the Dragons.
+
 class Player : Character {
     var name : String
     var combatLevelxp : Int = 0
@@ -34,6 +37,8 @@ class Player : Character {
         super.init(type: "Player", currentHealth: 100, combatLevel: 1)
     }
 }
+
+// Enemy classes, all created to change the values of currentEnemy, to the corresponding choice made in pickFarm(). All are subclasses of Character.
 
 class Chicken : Character {
         init() {

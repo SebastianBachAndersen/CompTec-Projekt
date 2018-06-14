@@ -8,6 +8,7 @@
 
 import Foundation
 
+// holds a copy of farm to call the farm classes function.
 var farm = Farm()
 
 // The Combat class. It
