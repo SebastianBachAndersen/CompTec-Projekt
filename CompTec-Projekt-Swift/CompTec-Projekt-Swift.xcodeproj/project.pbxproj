@@ -11,6 +11,7 @@
 		FF3895CC20CFE52D00DEFFD2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3895CB20CFE52D00DEFFD2 /* Login.swift */; };
 		FF3895CE20D103A200DEFFD2 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3895CD20D103A200DEFFD2 /* Characters.swift */; };
 		FF3895D020D118B100DEFFD2 /* Farms.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3895CF20D118B100DEFFD2 /* Farms.swift */; };
+		FF3895D420D24BCE00DEFFD2 /* Combat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3895D320D24BCE00DEFFD2 /* Combat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		FF3895CB20CFE52D00DEFFD2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		FF3895CD20D103A200DEFFD2 /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
 		FF3895CF20D118B100DEFFD2 /* Farms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farms.swift; sourceTree = "<group>"; };
+		FF3895D320D24BCE00DEFFD2 /* Combat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combat.swift; sourceTree = "<group>"; };
 		FF68F80020D0FEAC00146C4E /* config.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = config.php; sourceTree = "<group>"; };
 		FF68F80120D0FEF500146C4E /* dbconnect.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = dbconnect.php; sourceTree = "<group>"; };
 		FF68F80220D0FF9B00146C4E /* DbOperation.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = DbOperation.php; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				FF3895CB20CFE52D00DEFFD2 /* Login.swift */,
 				FF3895CD20D103A200DEFFD2 /* Characters.swift */,
 				FF3895CF20D118B100DEFFD2 /* Farms.swift */,
+				FF3895D320D24BCE00DEFFD2 /* Combat.swift */,
 			);
 			path = "CompTec-Projekt-Swift";
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				FF31452F20CFAE0000572FB0 /* main.swift in Sources */,
 				FF3895D020D118B100DEFFD2 /* Farms.swift in Sources */,
 				FF3895CC20CFE52D00DEFFD2 /* Login.swift in Sources */,
+				FF3895D420D24BCE00DEFFD2 /* Combat.swift in Sources */,
 				FF3895CE20D103A200DEFFD2 /* Characters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XQSVJ7NMB4;
+				DEVELOPMENT_TEAM = RC458UV35Y;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -281,7 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XQSVJ7NMB4;
+				DEVELOPMENT_TEAM = RC458UV35Y;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};

@@ -8,28 +8,40 @@
 
 import Foundation
 
+var combat = Combat(xpWhenKilled: 10)
+
 class Farm  {
     
     func pickFarm() {
         print("What place would you like to visit?")
-        print("Type 1 for Cow Farm")
-        print("Type 2 for Goblin Den")
-        print("Type 3 for Dragon Nest")
+        print("Type 1 for Chicken Farm")
+        print("Type 2 for Cow Farm")
+        print("Type 3 for Orc Wasteland")
+        print("Type 4 for Dragon Nest")
         
         let farmPick = readLine()
         
         switch farmPick {
             
         case "1"?:
-            print("You are now at the Cow Farm")
-            print("New Quest! 'Kill 1 Cow!'")
+            print("You are now at the Chicken Farm")
+            print("New Quest! 'Kill 1 Chicken!'")
+            combat.currentEnemy = Chicken()
+            combat.startFight()
             
         case "2"?:
-            print("You are inside at the Goblin Den")
-            print("New Quest! 'Kill 1 Goblin!'")
+            print("You are now at the Cow Farm")
+            print("New Quest! 'Kill 1 Cow!'")
+            combat.currentEnemy = Cow()
         case "3"?:
+            print("You are inside at the Orc Stronghold")
+            print("New Quest! 'Kill 1 Orc!'")
+            combat.currentEnemy = Orc()
+            
+        case "4"?:
             print("You are now inside the Dragon Nest")
             print("New Quest! 'Kill 1 Dragon!'")
+            combat.currentEnemy = Dragon()
             
         default:
             print("You have to choose a place to go!")

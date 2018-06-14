@@ -14,9 +14,9 @@ class Character {
     var combatLevel : Int = 1
     var attackPower : Int
     
-    init(type : String, currentHealth : Int, combatLevel : Int, attackPower : Int) {
+    init(type : String, currentHealth : Int, combatLevel : Int) {
         self.type = type
-        self.currentHealth = 100 * combatLevel / 2 + 50
+        self.currentHealth = currentHealth
         self.combatLevel = combatLevel
         self.attackPower = 10 * combatLevel / 2 + 5
         
@@ -26,15 +26,36 @@ class Character {
 
 class Player : Character {
     let name : String? = readLine()
-    
+    init() {
+        super.init(type: "Player", currentHealth: 100, combatLevel: 1)
+    }
 }
 
+class Chicken : Character {
+        init() {
+            super.init(type: "Chicken", currentHealth: 20, combatLevel: 1)
+    }
+}
 
 class Cow : Character {
-    
+    init() {
+        super.init(type: "Cow", currentHealth: 75, combatLevel: 2)
+    }
 }
 
+
+class Orc : Character {
+    init() {
+        super.init(type: "Orc", currentHealth: 150, combatLevel: 3)
+    }
+}
+
+
 class Dragon : Character {
+    
+    init() {
+        super.init(type: "Dragon", currentHealth: 250, combatLevel: 5)
+    }
     
     func Enrage () {
         attackPower = attackPower + (attackPower/100*30)
@@ -44,3 +65,5 @@ class Dragon : Character {
         
     }
 }
+
+
