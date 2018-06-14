@@ -25,18 +25,10 @@ while password == ""{
     password = ""
 }
 
-print("Type your username")
-if let username = readLine(){
-    print("Type your password")
-    if let password = readLine(){
-        loginPlaceholder.login(username: username, password: password)
-        print("Press 'Enter' to start game!")
-        sleep(1)
 
-        combatPlaceholder.currentPlayer.name = username
-    }
-}
-var dude = readLine()
+
+combatPlaceholder.currentPlayer.name = username
+
 
 
 
