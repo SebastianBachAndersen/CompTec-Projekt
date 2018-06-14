@@ -1,24 +1,22 @@
 import Foundation
 
+// Variables to contain copies of their respective classes, used to call functions from all across the project, effectively creating a single file, from where the entire game is controlled.
 var farmPlaceholder = Farm()
 var combatPlaceholder = Combat()
 var loginPlaceholder = Login()
 
-//Farm.pickFarm()
     var username = ""
     var password = ""
 
-    //login class
-    var login = Login()
-// password og username cheak
+// password og username check
 while password == ""{
-    print("username")
+    print("Type your username")
     username = readLine()!
-    print("Write your password")
+    print("Type your password")
     password = readLine()!
-    login.login(username: username, password: password)
+    loginPlaceholder.login(username: username, password: password)
     sleep(1)
-    let playername = login.userpass
+    let playername = loginPlaceholder.userpass
     
     if playername != ""{
         break
