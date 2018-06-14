@@ -11,11 +11,16 @@ var loginPlaceholder = Login()
 // password og username check
 while password == ""{
     print("Type your username")
+    // username to vairable
     username = readLine()!
     print("Type your password")
+    // password to vaiable
     password = readLine()!
+    // class call
     loginPlaceholder.login(username: username, password: password)
+    // sleep curs login not ready
     sleep(1)
+    // player name = seassionid
     let playername = loginPlaceholder.userpass
     
     if playername != ""{

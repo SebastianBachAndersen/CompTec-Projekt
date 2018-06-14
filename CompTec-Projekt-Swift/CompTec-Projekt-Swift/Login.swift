@@ -21,7 +21,7 @@ class Login {
     func login(username: String, password: String)-> String{
         var result : String = ""
         //web url
-        let serviceUrl = "http://localhost/db/DbOperation.php"
+        let serviceUrl = "http://localhost/ComTec-Frontside/DbOperation.php"
         
         
         //jasondatadownload
