@@ -3,6 +3,10 @@ import Foundation
 
 class Login {
     
+    var userpass : String = ""
+    var logedin : Bool = false
+
+
     struct Location {
         var username = ""
         var password = ""
@@ -11,9 +15,11 @@ class Login {
         var woodcuttingxp = ""
         var questpoint = ""
     }
+
     
-    func login(username: String, password: String){
     
+    func login(username: String, password: String)-> String{
+        var result : String = ""
         //web url
         let serviceUrl = "http://localhost/db/DbOperation.php"
         
@@ -31,15 +37,19 @@ class Login {
                     //succeeded
                     
                     // call the parse hason function on the data
-                    parseJson(data: data!)
+                    result = parseJson(data: data!, username , password)
+                    
                 }else{
                     //error
                 }
             })
             //start the task
             task.resume()
+            return result
+            
+            
         }
-        func parseJson(data: Data){
+        func parseJson(data: Data, _ username : String, _ password : String)-> String{
             
             
             var locArray = [Location]()
@@ -63,39 +73,60 @@ class Login {
                     
                     // her tilføjes det
                     locArray.append(loc)
+                    
                 }
-                // TODO: Pass the location array back
+                
+
+                                // TODO: Pass the location array back
             }
             catch {
                 print("there was an error")
             }
             
-            print(locArray)
+            
+            for i in locArray{
+                
+                if username == i.username{
+                    
+                    if password == i.password{
+                     
+                        logedin = true
+                        userpass = i.username
+                        break
+                    }else{
+                        logedin = false
+                        
+                    }
+                    
+                }else{
+                    logedin = false
+                }
+            }
+            if logedin == true{
+                print("u loged in")
+                return userpass
+                
+            }else{
+                print("u loged out")
+                return userpass
+            }
+            
             
         }
-        
+        return ""
     }
+        
+
     
     
     
     func signup(username: String, password: String){
-        
 
-            
-        //URL to our web service
-        
-        var URL_SAVE_TEAM = "localhost/MyWebService/api/createteam.php"
-            
-            
-        //TextFields declarations
-        var username: String = username
-        var password: String = password
-        
-            
         
                 
-      
+
+        
+
+    }
 }
 
-
-}
