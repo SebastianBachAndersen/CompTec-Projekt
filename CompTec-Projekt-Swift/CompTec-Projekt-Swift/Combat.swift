@@ -101,6 +101,7 @@ class Combat {
         currentPlayer.currentHealth = currentPlayer.currentHealth - currentEnemy.attackPower
         
         print("The \(currentEnemy.type) dealt \(currentEnemy.attackPower) to you!")
+        print("You now have \(currentPlayer.currentHealth) left!")
         
         
         if currentPlayer.currentHealth <= 0 {
@@ -113,7 +114,7 @@ class Combat {
         
         print("You won the battle!")
         
-        currentPlayer.combatLevelxp = currentPlayer.combatLevelxp + 10
+        currentPlayer.combatLevelxp = currentPlayer.combatLevelxp + xpWhenKilled
         currentPlayer.currentHealth = 100
         print("You rest, and heal back to full HP. Your HP is now \(currentPlayer.currentHealth)")
         print("You gained 10 XP! Your current XP is \(currentPlayer.combatLevelxp)")

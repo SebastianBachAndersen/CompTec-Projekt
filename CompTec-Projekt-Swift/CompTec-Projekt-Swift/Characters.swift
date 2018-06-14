@@ -13,16 +13,13 @@ class Character {
     var type : String
     var currentHealth : Int
     var combatLevel : Int = 1
-    var attackPower : Int
     
     init(type : String, currentHealth : Int, combatLevel : Int) {
         self.type = type
         self.currentHealth = currentHealth
         self.combatLevel = combatLevel
-        self.attackPower = 10 * combatLevel / 2 + 5
-        
     }
-    
+    var attackPower : Int {return 10 * combatLevel / 2 + 5}
 }
 
 // The Player class, unique from the Enemy classes, has a name, and combatLevelxp, making it possible to level up your combat level, to eventually take on the Dragons.
@@ -67,7 +64,6 @@ class Dragon : Character {
     }
     
     func Enrage () {
-        attackPower = attackPower + (attackPower/100*30)
     }
     
     func spewFire() {
